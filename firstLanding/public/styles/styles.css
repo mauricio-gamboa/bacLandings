@@ -256,7 +256,7 @@ Header Styles
 ***************************/
 #header {
   height: 845px;
-  background: url("../images/bg-header.jpg") no-repeat 0 0 / cover;
+  background: url("../images/bg-header.jpg") no-repeat fixed 50% 0 / cover;
   position: relative;
   overflow: hidden;
 }
@@ -316,9 +316,19 @@ Header Styles
   right: 128px;
   width: 1700px;
 }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-text h2 {
+    right: 142px;
+  }
+}
 .header-text h2 + h2 {
   top: 294px;
   right: 45px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-text h2 + h2 {
+    right: 59px;
+  }
 }
 .header-text p {
   font-size: 17px;
@@ -415,6 +425,9 @@ Call Free Styles
   color: #e60000;
   margin-bottom: 35px;
 }
+#call-free h3 a {
+  color: #e60000;
+}
 #call-free .call-free-icon {
   margin-top: 15px;
   margin-bottom: 30px;
@@ -429,7 +442,7 @@ CTA Styles
 ****************************
 ***************************/
 #cta {
-  background: url("../images/bg-cta.jpg") no-repeat 0 0 / cover;
+  background: url("../images/bg-cta.jpg") no-repeat fixed 50% 0 / cover;
   height: 607px;
   text-align: center;
   color: white;
