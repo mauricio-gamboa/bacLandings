@@ -20,6 +20,8 @@ Variables
 
 @one-third: percentage(1/3);
 
+@half: percentage(1/2);
+
 @site-padding: 35px;
 
 /***************************
@@ -99,6 +101,11 @@ Fonts
 .font-settings-3 {
   font-size: 18px;
   line-height: 28px;
+
+  @media @small {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .font-settings-4 {
@@ -384,6 +391,10 @@ Header Styles
     .text {
       padding-top: 30px;
 
+      @media @small {
+        padding-top: 15px;
+      }
+
       p {
         .font-settings-3;
         margin: 0;
@@ -440,12 +451,20 @@ Header Styles
       right: 142px;
     }
 
+    @media @small {
+      right: 113px;
+    }
+
     & + h2 {
       top: 294px;
       right: 45px;
 
       @media @medium {
         right: 59px;
+      }
+
+      @media @small {
+        right: 30px;
       }
     }
   }
@@ -482,6 +501,10 @@ Features Styles
   .feature {
     float: left;
     width: @one-third;
+
+    @media @small {
+      width: @half;
+    }
   }
 
   .site-subtitle {
@@ -502,6 +525,11 @@ Features Styles
   display: inline-block;
   padding: 0 50px;
   .round-border(50px);
+
+  @media @small {
+    font-size: 15px;
+    padding: 0 35px;
+  }
 }
 
 .dots-wrapper {
@@ -528,14 +556,44 @@ Features Styles
 
   &.br {
     .border-right(1px, @gray-2);
+
+    @media @small {
+      border: none;
+    }
   }
 
   &.bb {
     .border-bottom(1px, @gray-2);
+
+    @media @small {
+      border: none;
+    }
   }
 
   &.pt {
     padding-top: 40px;
+
+    @media @small {
+      padding-top: 0;
+    }
+  }
+
+  @media @small {
+    &.sbr {
+      .border-right(1px, @gray-2);
+    }
+
+    &.sbb {
+      .border-bottom(1px, @gray-2);
+    }
+
+    &.spt {
+      padding-top: 40px;
+    }
+
+    &.spb {
+      padding-bottom: 40px;
+    }
   }
 
   h5 {

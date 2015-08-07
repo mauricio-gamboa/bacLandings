@@ -63,6 +63,12 @@ Fonts
   font-size: 18px;
   line-height: 28px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .font-settings-3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 .font-settings-4 {
   font-size: 21px;
   line-height: 27px;
@@ -272,10 +278,21 @@ Header Styles
 #header .bottom .text {
   padding-top: 30px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #header .bottom .text {
+    padding-top: 15px;
+  }
+}
 #header .bottom .text p {
   font-size: 18px;
   line-height: 28px;
   margin: 0;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #header .bottom .text p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 #header .bottom a {
   color: white;
@@ -321,6 +338,11 @@ Header Styles
     right: 142px;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-text h2 {
+    right: 113px;
+  }
+}
 .header-text h2 + h2 {
   top: 294px;
   right: 45px;
@@ -328,6 +350,11 @@ Header Styles
 @media (min-width: 993px) and (max-width: 1200px) {
   .header-text h2 + h2 {
     right: 59px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-text h2 + h2 {
+    right: 30px;
   }
 }
 .header-text p {
@@ -359,6 +386,11 @@ Features Styles
   float: left;
   width: 33.33333333%;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #features .feature {
+    width: 50%;
+  }
+}
 #features .site-subtitle {
   margin-top: 50px;
 }
@@ -375,6 +407,12 @@ Features Styles
   display: inline-block;
   padding: 0 50px;
   border-radius: 50px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .site-subtitle {
+    font-size: 15px;
+    padding: 0 35px;
+  }
 }
 .dots-wrapper {
   text-align: center;
@@ -397,11 +435,40 @@ Features Styles
 .feature.br {
   border-right: 1px solid #efefef;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .feature.br {
+    border: none;
+  }
+}
 .feature.bb {
   border-bottom: 1px solid #efefef;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .feature.bb {
+    border: none;
+  }
+}
 .feature.pt {
   padding-top: 40px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .feature.pt {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .feature.sbr {
+    border-right: 1px solid #efefef;
+  }
+  .feature.sbb {
+    border-bottom: 1px solid #efefef;
+  }
+  .feature.spt {
+    padding-top: 40px;
+  }
+  .feature.spb {
+    padding-bottom: 40px;
+  }
 }
 .feature h5 {
   font-size: 13px;
