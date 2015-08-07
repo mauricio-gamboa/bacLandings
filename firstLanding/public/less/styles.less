@@ -368,7 +368,7 @@ Header Styles
 
 #header {
   height: 845px;
-  background: url("../images/bg-header.jpg") no-repeat 0 0 / cover;
+  background: url("../images/bg-header.jpg") no-repeat fixed 50% 0 / cover;
   position: relative;
   overflow: hidden;
 
@@ -436,9 +436,17 @@ Header Styles
     right: 128px;
     width: 1700px;
 
+    @media @medium {
+      right: 142px;
+    }
+
     & + h2 {
       top: 294px;
       right: 45px;
+
+      @media @medium {
+        right: 59px;
+      }
     }
   }
 
@@ -554,6 +562,10 @@ Call Free Styles
     font-family: 'open_sansregular';
     color: @red-1;
     margin-bottom: 35px;
+
+    a {
+      color: @red-1;
+    }
   }
 
   .call-free-icon {
@@ -574,7 +586,7 @@ CTA Styles
 ***************************/
 
 #cta {
-  background: url("../images/bg-cta.jpg") no-repeat 0 0 / cover;
+  background: url("../images/bg-cta.jpg") no-repeat scroll 50% 0 / cover;
   height: 607px;
   text-align: center;
   color: white;
