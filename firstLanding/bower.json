@@ -1,0 +1,12 @@
+{
+  "name": "firstLanding",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mauricio-gamboa/bacLandings",
+  "authors": [
+    "Mauricio Gamboa <magalocr@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

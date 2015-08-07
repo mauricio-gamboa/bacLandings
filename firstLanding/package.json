@@ -1,0 +1,19 @@
+{
+  "name": "firstLanding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*"
+  }
+}
