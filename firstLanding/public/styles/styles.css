@@ -59,6 +59,12 @@ Fonts
   font-size: 17px;
   line-height: 28px;
 }
+@media (max-width: 767px) {
+  .font-settings-2 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
 .font-settings-3 {
   font-size: 18px;
   line-height: 28px;
@@ -69,9 +75,21 @@ Fonts
     line-height: 26px;
   }
 }
+@media (max-width: 767px) {
+  .font-settings-3 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
 .font-settings-4 {
   font-size: 21px;
   line-height: 27px;
+}
+@media (max-width: 767px) {
+  .font-settings-4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 .font-settings-5 {
   font-size: 20px;
@@ -80,6 +98,10 @@ Fonts
 .font-settings-6 {
   font-size: 11px;
   line-height: 32px;
+}
+.font-settings-7 {
+  font-size: 15px;
+  line-height: 24px;
 }
 @font-face {
   font-family: 'open_sansregular';
@@ -247,6 +269,12 @@ Nav Styles
   margin-top: 15px;
   float: left;
 }
+@media (max-width: 767px) {
+  #nav .logo {
+    float: none;
+    text-align: center;
+  }
+}
 #nav .call {
   float: right;
   margin-top: 10px;
@@ -266,6 +294,11 @@ Header Styles
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  #header {
+    background: rgba(0, 0, 0, 0) url("../images/bg-header.jpg") no-repeat scroll 57% -100px;
+  }
+}
 #header .bottom {
   color: white;
   background-color: rgba(230, 0, 0, 0.7);
@@ -275,12 +308,25 @@ Header Styles
   left: 0;
   width: 100%;
 }
+@media (max-width: 767px) {
+  #header .bottom {
+    height: auto;
+    padding: 15px 0;
+    background-color: #e60000;
+  }
+}
 #header .bottom .text {
   padding-top: 30px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   #header .bottom .text {
     padding-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #header .bottom .text {
+    padding: 0;
+    text-align: center;
   }
 }
 #header .bottom .text p {
@@ -292,6 +338,17 @@ Header Styles
   #header .bottom .text p {
     font-size: 16px;
     line-height: 26px;
+  }
+}
+@media (max-width: 767px) {
+  #header .bottom .text p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #header .bottom .text p br {
+    display: none;
   }
 }
 #header .bottom a {
@@ -306,6 +363,11 @@ Header Styles
 .contact-wrapper {
   background: url("../images/sep-1.png") no-repeat 50% 50%;
 }
+@media (max-width: 767px) {
+  .contact-wrapper {
+    margin-top: 15px;
+  }
+}
 .contact-wrapper .contact {
   font-family: 'proxima_nova_semibold';
   width: 50%;
@@ -316,9 +378,31 @@ Header Styles
   height: 109px;
   line-height: 109px;
 }
+@media (max-width: 767px) {
+  .contact-wrapper .contact {
+    line-height: normal;
+    height: 89px;
+    font-size: 16px;
+    padding-top: 18px;
+  }
+}
+.contact-wrapper .contact p {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .contact-wrapper .contact p i {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 .header-text {
   padding-top: 356px;
   position: relative;
+}
+@media (max-width: 767px) {
+  .header-text {
+    padding-top: 450px;
+  }
 }
 .header-text h2 {
   text-transform: uppercase;
@@ -343,6 +427,15 @@ Header Styles
     right: 113px;
   }
 }
+@media (max-width: 767px) {
+  .header-text h2 {
+    font-size: 26px;
+    left: -1524px;
+    line-height: 34px;
+    right: auto;
+    top: 360px;
+  }
+}
 .header-text h2 + h2 {
   top: 294px;
   right: 45px;
@@ -357,11 +450,24 @@ Header Styles
     right: 30px;
   }
 }
+@media (max-width: 767px) {
+  .header-text h2 + h2 {
+    top: 404px;
+    right: auto;
+    left: -1462px;
+  }
+}
 .header-text p {
   font-size: 17px;
   line-height: 28px;
   margin: 0;
   color: black;
+}
+@media (max-width: 767px) {
+  .header-text p {
+    font-size: 16px;
+    line-height: 23px;
+  }
 }
 .header-text p strong {
   font-weight: normal;
@@ -373,6 +479,12 @@ Header Styles
   line-height: 54px;
   margin-top: 30px;
   font-size: 17px;
+}
+@media (max-width: 767px) {
+  .header-text .btn-1 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
 /***************************
 ****************************
@@ -391,6 +503,19 @@ Features Styles
     width: 50%;
   }
 }
+@media (max-width: 767px) {
+  #features .feature {
+    width: 100%;
+    padding: 0;
+    border: none;
+    min-height: 0;
+  }
+}
+@media (max-width: 767px) {
+  #features .site-title {
+    margin-bottom: 35px;
+  }
+}
 #features .site-subtitle {
   margin-top: 50px;
 }
@@ -399,6 +524,12 @@ Features Styles
   text-align: center;
   font-size: 21px;
   line-height: 27px;
+}
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 .site-subtitle {
   font-family: 'open_sansregular';
@@ -412,6 +543,14 @@ Features Styles
   .site-subtitle {
     font-size: 15px;
     padding: 0 35px;
+  }
+}
+@media (max-width: 767px) {
+  .site-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px;
+    border-radius: 10px;
   }
 }
 .dots-wrapper {
@@ -503,6 +642,11 @@ Call Free Styles
   color: black;
   margin: 0;
 }
+@media (max-width: 767px) {
+  #call-free p br {
+    display: none;
+  }
+}
 /***************************
 ****************************
 CTA Styles
@@ -515,15 +659,32 @@ CTA Styles
   color: white;
   padding-top: 220px;
 }
+@media (max-width: 767px) {
+  #cta {
+    background: url("../images/bg-cta.jpg") no-repeat scroll 50% 0;
+    padding-top: 160px;
+  }
+}
 .cta-text p {
   font-size: 20px;
   line-height: 33px;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .cta-text p br {
+    display: none;
+  }
+}
 .cta-text .btn-1 {
   line-height: 54px;
   width: 391px;
   margin-top: 35px;
+}
+@media (max-width: 767px) {
+  .cta-text .btn-1 {
+    width: 100%;
+    font-size: 15px;
+  }
 }
 /***************************
 ****************************
@@ -544,4 +705,35 @@ Footer Styles
   font-size: 11px;
   line-height: 32px;
   color: #acacac;
+}
+@media (max-width: 767px) {
+  #footer .bottom p {
+    line-height: normal;
+  }
+}
+/***************************
+****************************
+Owl Styles
+****************************
+***************************/
+.owl-controls .owl-pagination .owl-page {
+  margin: 0 8px;
+}
+.owl-controls .owl-pagination .owl-page span {
+  border: 3px solid white;
+  background-color: #cccccc;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin: 0;
+}
+.owl-controls .owl-pagination .owl-page.active span {
+  border: 3px solid #e60000;
+  background-color: #e60000;
+}
+.owl-controls .owl-pagination .owl-page.active:hover span {
+  background-color: #e60000;
+}
+.owl-controls .owl-pagination .owl-page:hover span {
+  background-color: #e60000;
 }
