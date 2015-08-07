@@ -26,7 +26,8 @@ module.exports = function (grunt) {
       combine: {
         files: {
           'public/styles/libs.min.css': [
-            'bower_components/bootstrap/dist/css/bootstrap.css'
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'bower_components/font-awesome/css/font-awesome.min.css'
           ],
           'public/styles/styles.min.css': [
             'public/styles/styles.css'
