@@ -442,7 +442,7 @@ CTA Styles
 ****************************
 ***************************/
 #cta {
-  background: url("../images/bg-cta.jpg") no-repeat fixed 50% 0 / cover;
+  background: url("../images/bg-cta.jpg") no-repeat scroll 50% 0 / cover;
   height: 607px;
   text-align: center;
   color: white;
