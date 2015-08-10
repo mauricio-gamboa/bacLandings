@@ -215,6 +215,10 @@ Buttons and Links
 }
 .my-btn.btn-1 {
   background-color: #34a2f6;
+  line-height: 23px;
+  margin-top: 30px;
+  font-size: 17px;
+  padding: 14px;
 }
 .my-btn.btn-1:hover {
   background-color: #2e90da;
@@ -541,13 +545,6 @@ Header Styles
   font-weight: normal;
   font-family: 'open_sanssemibold';
 }
-.header-text .btn-1 {
-  height: 54px;
-  width: 100%;
-  line-height: 54px;
-  margin-top: 30px;
-  font-size: 17px;
-}
 @media (max-width: 767px) {
   .header-text .btn-1 {
     font-size: 15px;
@@ -742,11 +739,6 @@ CTA Styles
   .cta-text p br {
     display: none;
   }
-}
-.cta-text .btn-1 {
-  line-height: 54px;
-  width: 391px;
-  margin-top: 35px;
 }
 @media (max-width: 767px) {
   .cta-text .btn-1 {
