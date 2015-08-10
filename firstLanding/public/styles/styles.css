@@ -56,13 +56,12 @@ Fonts
   line-height: 22px;
 }
 .font-settings-2 {
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 767px) {
   .font-settings-2 {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 14px;
   }
 }
 .font-settings-3 {
@@ -290,13 +289,13 @@ Header Styles
 ***************************/
 #header {
   height: 845px;
-  background: url("../images/bg-header.jpg") no-repeat fixed 50% 0 / cover;
+  background: #deaf84 url("../images/bg-header.jpg") no-repeat fixed 50% 0;
   position: relative;
   overflow: hidden;
 }
 @media (max-width: 767px) {
   #header {
-    background: rgba(0, 0, 0, 0) url("../images/bg-header.jpg") no-repeat scroll 57% -100px;
+    background-position: 58% -100px;
   }
 }
 #header .bottom {
@@ -396,8 +395,9 @@ Header Styles
   }
 }
 .header-text {
-  padding-top: 356px;
   position: relative;
+  height: 845px;
+  padding-top: 480px;
 }
 @media (max-width: 767px) {
   .header-text {
@@ -411,20 +411,16 @@ Header Styles
   background-color: #e60000;
   line-height: 44px;
   text-align: right;
-  padding-right: 15px;
+  padding: 0 15px;
   position: absolute;
   top: 240px;
   right: 128px;
   width: 1700px;
+  left: -1468px;
 }
 @media (min-width: 993px) and (max-width: 1200px) {
   .header-text h2 {
-    right: 142px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .header-text h2 {
-    right: 113px;
+    top: 205px;
   }
 }
 @media (max-width: 767px) {
@@ -438,35 +434,105 @@ Header Styles
 }
 .header-text h2 + h2 {
   top: 294px;
-  right: 45px;
+  left: -15px;
+  width: 332px;
 }
 @media (min-width: 993px) and (max-width: 1200px) {
   .header-text h2 + h2 {
-    right: 59px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .header-text h2 + h2 {
-    right: 30px;
+    top: 259px;
   }
 }
 @media (max-width: 767px) {
   .header-text h2 + h2 {
     top: 404px;
-    right: auto;
-    left: -1462px;
+    left: -93px;
   }
 }
 .header-text p {
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 16px;
   margin: 0;
   color: black;
+  line-height: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 360px;
+  left: -1369px;
+  padding: 0 15px;
+  text-align: right;
+  width: 1700px;
 }
 @media (max-width: 767px) {
   .header-text p {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-text p {
+    top: 356px;
+  }
+}
+@media (max-width: 767px) {
+  .header-text p {
+    top: 450px;
+    width: auto;
+    padding: 0;
+    left: 0;
+    position: static;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+}
+.header-text p + p {
+  top: 388px;
+  width: 390px;
+  left: -55px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-text p + p {
+    top: 384px;
+  }
+}
+@media (max-width: 767px) {
+  .header-text p + p {
+    top: 478px;
+    width: auto;
+    padding: 0;
+  }
+}
+.header-text p + p + p {
+  top: 416px;
+  width: 390px;
+  left: -37px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-text p + p + p {
+    top: 412px;
+  }
+}
+@media (max-width: 767px) {
+  .header-text p + p + p {
+    top: 506px;
+    width: auto;
+    padding: 0;
+  }
+}
+.header-text p + p + p + p {
+  top: 444px;
+  width: 390px;
+  padding-left: 80px;
+  left: -182px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-text p + p + p + p {
+    top: 440px;
+  }
+}
+@media (max-width: 767px) {
+  .header-text p + p + p + p {
+    top: 534px;
+    width: auto;
+    padding: 0;
   }
 }
 .header-text p strong {
