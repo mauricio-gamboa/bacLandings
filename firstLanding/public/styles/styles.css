@@ -479,8 +479,10 @@ Header Styles
     padding: 0;
     left: 0;
     position: static;
-    text-align: center;
+    text-align: left;
     margin-bottom: 4px;
+    text-indent: 15px;
+    font-size: 13px;
   }
 }
 .header-text p + p {
